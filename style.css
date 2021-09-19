@@ -1,0 +1,267 @@
+body,h1,h2,h3,h4,h5,h6{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* Header Section */
+
+.main-menu{
+    z-index: 99;
+    position: sticky;
+    top: 0;
+}
+.main-menu .logo span {
+    width: 40px;
+    color: #fff;
+    /* background-color: blue; */
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    background: #6278df;
+    border-radius: 10px;
+    font-size: 28px;
+}
+.navbar .navbar-brand {
+    color: rgba(0,0,0,.9);
+    font-size: 25px;
+    font-weight: 600;
+}
+.navbar .navbar-brand:hover{
+    color: rgb(189, 189, 189);
+}
+.main-menu .navbar .menu-ul{
+    margin-left: 150px;
+}
+.main-menu .navbar .menu-ul li:hover > a{
+    color: #6278df !important;
+}
+.main-menu .navbar .menu-ul li a{
+    padding: 10px 25px !important;
+}
+.main-menu .navbar .menu-ul li ul li a{
+    border-bottom: 1px solid #ddd;
+}
+.main-menu .navbar .menu-ul li ul li:last-child a{
+    border-bottom: none;
+}
+
+/* Slider Section */
+
+.slider-section{
+    background: url(./img/mbr-10.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: -1;
+}
+
+
+.slider-content p {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.slider-content h2{
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+}
+.slider-content form{
+    margin-bottom: 20px;
+}
+
+/* Health Section */
+
+.health-section{
+    background-color: #f7f9ff;
+}
+.health-section h1 {
+    font-size: 2.9rem;
+    margin-top: 148px;
+}
+.health-section p {
+    line-height: 2rem;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/* About Section */
+
+.about h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.about h5{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+.about-section-item{
+    height: 300px;
+}
+.about-section-item-image{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.about-section-item-image img{
+    height: 100%;  
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -70px;
+    
+}
+.problem{
+    left:-20px !important;
+}
+.about-section-item-text{
+    width: 60%;
+    padding: 20px;
+    
+}
+.about-section-item-text h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.about-section-item-text p{
+    font-size: 18px;
+}
+
+/* Our Application Section */
+.application-image{
+    position: relative;
+}
+.application-image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 68, 219, .5);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.application-image:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Plan Section */
+
+.Plan-section{
+    background-color: rgba(65, 105, 225, 0.068);
+}
+.plan-card{
+    border: none !important;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.plan-card:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.plan-section .card h2{
+    font-size: 2.7rem;
+}
+.card-secound-header{
+    margin: 20px 0;
+    line-height: 1.6rem;
+}
+.plan-list ul{
+    list-style: none;
+    padding-left: 0 !important;
+}
+.plan-list ul span{
+    color: #6278df;
+    width: 30px;
+    margin-right: 10px;
+    text-align: center;
+    /* display: inline-block; */
+}
+.plan-list ul li{
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+.plan-list a{
+    transition: .5s;
+}
+.plan-card:hover a{
+    background-color: #1131be;
+    color: #fff;
+}
+.plan-list a:hover{
+    background-color: black;
+    color: #fff;
+    transform: translateY(5px);
+}
+
+/* Feedback Section */
+.quate{
+    opacity: 0.1;
+}
+.feedbacker{
+    width: 280px;
+    margin: auto;
+}
+.feedbacker img{
+    width: 80px;
+    margin-right: 15px;
+}
+
+/* Our Team Section */
+
+.our-team-section{
+    background-color: #f7f9ff;
+}
+.our-team{
+    background-color: #fff;
+    border: none !important;
+    margin-top: 110px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.our-team:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.our-team img {
+    width: 140px;
+    margin-top: -70px;
+    margin-left: 15px;
+}
+.our-team a{
+    transition: .4s;
+}
+.our-team a:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/* Contact Section */
+
+.form-contact{
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    text-align: center;
+}
+.apps-section{
+    width: 600px;
+    margin: auto;
+}
+footer{
+    background-color: #808080;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
